@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;600;700&display=swap');
+
+.main {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    margin-left: 20px;
+    color: #fbfbfb;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.social a:hover {
+    color: #ff073a;
+}
+
+.main img {
+    width: 185px;
+    height: 80px;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact a {
+    font-family: 'Sofia Sans', sans-serif;
+    margin-left: 20px;
+    color: #fbfbfb;
+    font-size: 16px;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #cc3843;
+}

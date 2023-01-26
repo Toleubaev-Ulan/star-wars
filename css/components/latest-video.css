@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;600;700&display=swap');
+
+.latest-video {
+    background-color: #000;
+    padding: 1.5% 7%;
+}
+
+.latest-video-header {
+    border-bottom: 1px dashed #fbfbfb;
+    margin-bottom: 20px;
+}
+
+.latest-video-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.latest-video-header h2 {
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-family: 'Sofia Sans', sans-serif;
+    color: #fbfbfb;
+}
+
+.latest-video-header a {
+    color: #fbfbfb;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family: 'Sofia Sans', sans-serif;
+    transition: .4s;
+}
+
+.latest-video-header img {
+    width: 13px;
+    height: 13px;
+    filter: invert(100%) sepia(0%) saturate(111%) hue-rotate(34deg) brightness(115%) contrast(97%);
+}
+
+.latest-video-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.latest-video-item {
+    width: 33.3%;
+    position: relative;
+    background-color: #1D1E1F;
+    text-align: center;
+    transition: .4s;
+}
+
+.latest-video-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(135deg, #000 16px, transparent 0%);
+}
+
+.latest-video-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(-45deg, #000 16px, transparent 0%);
+}
+
+.latest-video-item a {
+    font-family: 'Sofia Sans', sans-serif;
+    text-decoration: none;
+}
+
+.latest-video-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.latest-video-item h6 {
+    height: 30px;
+    padding: 3.5% 5%;
+    text-align: start;
+    font-size: 14px;
+    font-weight: 700;
+    /* color: #5F6368; */
+    color: #fbfbfb;
+    margin-bottom: 5px;
+}
+
+.latest-video-item p {
+    width: 5%;
+    height: 4px;
+    margin: 8px 0 0 30px;
+    background-color: #5F6368;
+    border-radius: 5px;
+    transition: .4s;
+    position: relative;
+}
+
+.latest-video-item p::after {
+    content: "";
+    position: absolute;
+    width: 1%;
+    height: 0.8px;
+    left: -10px;
+    background-color: #5F6368;
+    border: 2px solid #5F6368;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.latest-video-item:hover p::after {
+    background-color: #fbfbfb;
+    border: 2px solid #fbfbfb;
+    box-shadow: 0 0 5px #fbfbfb;
+}
+
+.latest-video-item:hover p {
+    width: 30%;
+    background-color: #fbfbfb;
+    box-shadow: 0 0 5px #fbfbfb;
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;600;700&display=swap');
+
+.home {
+    padding: 3.5% 7%;
+    background-color: #000;
+    border-top: 1px solid #fbfbfb;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-text {
+    width: 50%;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.home-text h3{
+    margin-top: 80px;
+    font-size: 20px;
+    color: #fbfbfb;
+}
+
+.home-text h1 {
+    margin-top: 50px;
+    font-size: 80px;
+    font-weight: 900;
+    color: #fbfbfb;
+}
+
+.home-text p {
+    margin-top: 50px;
+    margin-right: 100px;
+    color: #fbfbfb;
+    font-size: 18px;
+}
+
+.home-text a {
+    margin-top: 80px;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+    color: #fbfbfb;
+}
+
+.home-text a.go, a.cta {
+    padding: 9px 25px;
+    border: 1px solid transparent;
+    background-color: #fbfbfb;
+    color: #000;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: .4s;
+}
+
+.home-text a.go:hover {
+    transform: scale(1.2);
+    /* margin-left: 20px; */
+    margin-right: 15px;
+    background-color: #ff073a;
+    color: #fbfbfb;
+}
+
+.home-text a.cta:hover {
+    transform: scale(1.2);
+    /* margin-left: 20px; */
+    margin-left: 15px;
+    background-color: #cc3843;
+    color: #fbfbfb;
+}
+
+.home-text a.cta i {
+    margin-right: 12px;
+}
+
+.link{
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+    /* transition: .4s; */
+}
+
+.link a:hover {
+    transition: .4s;
+    transform: scale(1.2);
+    color: #cc3843;
+    /* transform: rotate(360deg); */
+}
+
+.home-img {
+    width: 50%;
+}
+
+.home-img img {
+    width: 600px;
+    height: 550px;
+}
+
+
+
+
