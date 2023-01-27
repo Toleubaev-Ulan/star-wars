@@ -63,7 +63,7 @@
     transform: scale(1.2);
     /* margin-left: 20px; */
     margin-left: 15px;
-    background-color: #cc3843;
+    background-color: #ff073a;
     color: #fbfbfb;
 }
 
@@ -81,7 +81,7 @@
 .link a:hover {
     transition: .4s;
     transform: scale(1.2);
-    color: #cc3843;
+    color: #ff073a;
     /* transform: rotate(360deg); */
 }
 

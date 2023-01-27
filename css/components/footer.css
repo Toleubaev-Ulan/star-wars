@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;600;700&display=swap');
+
+.footer {
+    background-color: #000;
+    font-family: 'Sofia Sans', sans-serif;
+    color: #fff;
+    padding: 1.5% 7%;
+}
+
+.footer .line {
+    border-top: 1px dashed #fff;
+    margin-bottom: 40px;
+}
+
+.footer img {
+    width: 280px;
+    height: 70px;
+    margin-top: 30px;
+}
+
+.footer-item {    
+    position: relative;
+    background-color: #1D1E1F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(135deg, #000 20px, transparent 0%), linear-gradient(-135deg, #000 20px, transparent 0%);
+}
+
+.footer-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(-45deg, #000 20px, transparent 0%), linear-gradient(45deg, #000 20px, transparent 0%);
+}
+
+.footer-item .linear-top {
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 30%;
+    height: 20px;
+    background-color: #000;
+}
+
+.footer-item .linear-top::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(135deg, #1D1E1F 14px, transparent 0%), linear-gradient(-135deg, #1D1E1F 14px, transparent 0%);
+    transform: rotateX(180deg);
+}
+
+.footer-item .linear-bottom {
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 30%;
+    height: 20px;
+    background-color: #000;
+}
+
+.footer-item .linear-bottom::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(-45deg, #1D1E1F 14px, transparent 0%), linear-gradient(45deg, #1D1E1F 14px, transparent 0%);
+    transform: rotateX(180deg);
+}
+
+.footer-item p {
+    max-width: 500px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.linkfooter {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.linkfooter li {
+    margin: 0 10px;
+}
+
+.linkfooter a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkfooter a i {
+    font-size: 22px;
+    transition: .4s;
+}
+
+.linkfooter a:hover {
+    color: #ff073a;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
+
+

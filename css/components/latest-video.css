@@ -29,13 +29,30 @@
     font-size: 16px;
     margin-bottom: 5px;
     font-family: 'Sofia Sans', sans-serif;
-    transition: .4s;
 }
 
 .latest-video-header img {
+    position: absolute;
     width: 13px;
     height: 13px;
     filter: invert(100%) sepia(0%) saturate(111%) hue-rotate(34deg) brightness(115%) contrast(97%);
+    opacity: 0;
+}
+
+.latest-video-header-link a {
+    position: relative;
+    right: 0;
+    transition: .4s;
+}
+
+.latest-video-header-link a:hover {
+    right: 13px;
+}
+
+.latest-video-header a:hover .arrow{
+    margin-left: 5px;
+    transition: .4s;
+    opacity: 1;
 }
 
 .latest-video-list {
