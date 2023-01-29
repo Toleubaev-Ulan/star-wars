@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --index: calc(1vw + 1vh);
+    --transition: transform .75 cubic-bezier(0.075, 0.5, 0, 1);
+}
+
+.content {
+    will-change: transform;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.films_container {
+    font-family: 'Sofia Sans', sans-serif;
+    background-color: #000;
+    line-height: 1.55;
+}
+
+.layer-header {
+    position: relative;
+}
+
+/* .layer-header::after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: calc(var(--index) * 10);
+    background-image: url('../../../img/ground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: calc(var(--index) * -4.5);
+} */
+
+.layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: 5%; */
+    overflow: hidden;
+    position: relative;
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    z-index: 2;
+    transition: var(--transition);
+}
+
+.layers-base {
+    transform: translate3d(0, calc(var(--scrollTop) / 3), 0); /*1.6*/
+    z-index: 0;
+}
+
+.layers-middle {
+    transform: translate3d(0, calc(var(--scrollTop) / 3.9), 0); /*2.5*/
+}
+
+.layers-front {
+    transform: translate3d(0, calc(var(--scrollTop) / 7.1), 0); /*5.7*/
+}
+
+.layer-header {
+    z-index: 1;
+    transform: translate3d(0, calc(var(--scrollTop) / 3.4), 0); /*2*/
+    transition: var(--transition);
+    will-change: transform;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #e7e7e0;
+    text-shadow: 0 0 15px #9e7d35;
+}
+
+.layers-caption {
+    font-size: calc(var(--index) / 1.2);
+    letter-spacing: calc(var(--index) / 5);
+    margin-top: calc(var(--index) * -0.75);
+}
+
+.layers-title {
+    font-size: calc(var(--index) * 2.5);
+    letter-spacing: calc(var(--index) / 2.5);
+}

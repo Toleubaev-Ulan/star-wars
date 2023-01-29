@@ -7,3 +7,6 @@
 @import url('components/latest-video.css');
 @import url('components/explore-more.css');
 @import url('components/footer.css');
+
+@import url('components/second/films.css');
+@import url('components/second/timeline.css');
