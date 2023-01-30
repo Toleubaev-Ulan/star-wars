@@ -61,7 +61,7 @@
     margin: 6px 0 15px;
 }
 
-.timeline-content {
+/* .timeline-content {
     background-color: #2f363e;
     padding: 40px;
     border-radius: 7px;
@@ -79,14 +79,6 @@
     margin-left: 20px;
 }
 
-.timeline-content h3 {
-    font-size: 20px;
-    color: #fff;
-    margin: 0 0 10px;
-    text-transform: capitalize;
-    font-weight: 500;
-}
-
 .timeline-content p {
     color: #c8c8c8;
     font-size: 16px;
@@ -101,4 +93,99 @@
     margin-top: 20px;
     font-size: 14px;
     color: #000;
+} */
+
+.timeline-card {
+    width: calc(100% - 10px);
+    position: relative;
+    background-color: #1D1E1F;
+    text-align: left;
+    transition: .4s;
+}
+
+.timeline-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(135deg, #000 16px, transparent 0%);
+}
+
+.timeline-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(-45deg, #000 16px, transparent 0%);
+}
+
+.timeline-card a {
+    display: flex;
+    font-family: 'Sofia Sans', sans-serif;
+    text-decoration: none;
+}
+
+.timeline-card .flex-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.timeline-card img {
+    width: 200px;
+    height: 270px;
+}
+
+.timeline-card h3 {
+    height: 30px;
+    padding: 0% 5%;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.timeline-card h6 {
+    padding: 0% 5%;
+    color: #c8c8c8;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.timeline-card p {
+    width: 20%;
+    height: 4px;
+    margin: 8px 0 0 30px;
+    background-color: #5F6368;
+    border-radius: 5px;
+    transition: .4s;
+    position: relative;
+}
+
+.timeline-card p::after {
+    content: '';
+    position: absolute;
+    width: 1%;
+    height: 0.8px;
+    left: -10px;
+    background-color: #5F6368;
+    border: 2px solid #5F6368;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.timeline-card:hover p::after {
+    background-color: #fbfbfb;
+    border: 2px solid #fbfbfb;
+    box-shadow: 0 0 5px #fbfbfb;
+}
+
+.timeline-card:hover p {
+    width: 40%;
+    background-color: #fbfbfb;
+    box-shadow: 0 0 5px #fbfbfb;
 }
